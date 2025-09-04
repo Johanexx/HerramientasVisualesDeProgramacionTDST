@@ -4,6 +4,8 @@ import './App.css'
 import { BasicTypes } from './Components/BasicTypes'
 import { Contador } from './Components/contador'
 import { TiendaOnline } from './Components/TiendaOnline'
+import { Prueba1 } from './Components/Prueba1'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +15,8 @@ function App() {
     {/* <BasicTypes/> */}
       <Contador/>
       <TiendaOnline/>
+      <Prueba1/>
+
       </>
   )
 }
