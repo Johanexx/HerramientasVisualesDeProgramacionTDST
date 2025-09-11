@@ -20,6 +20,7 @@ export const BasicTypes = () => {
     "Dolores sociales",
     "JUano choclo",
     "cULEBRA",];
+
     const user ={
       name: "JUanA",
       email: "j.ne@gmail.com",
@@ -29,6 +30,30 @@ export const BasicTypes = () => {
       isActive: true
 
     }
+    const users = [
+{
+  name: "JUanA",
+      email: "j.ne@gmail.com",
+      age: "20",
+      role: "administrador",
+      MaritalStatus: "casado",
+      isActive: true
+},
+{name: "JUanA",
+      email: "j.ne@gmail.com",
+      age: "20",
+      role: "administrador",
+      MaritalStatus: "casado",
+      isActive: true
+},
+{name: "JUanA",
+      email: "j.ne@gmail.com",
+      age: "20",
+      role: "administrador",
+      MaritalStatus: "casado",
+      isActive: true}
+    ]
+    
   return (
     <>
       <div>Pagina para come queso XD</div>
@@ -60,6 +85,22 @@ export const BasicTypes = () => {
 
 <h2>Objetos Literales</h2>
 {user.name}
+
+<h2>Lista Objetos Literales</h2>
+<ul>
+  {users.map(
+    (value,index)=><div key ={index}>
+<div>{}</div>
+<div>{}</div>
+<div>{}</div>
+<div>{}</div>
+<div>{}</div>
+<div>{}</div>
+    </div>
+  )
+  }
+</ul>
+
       </div>
 
     </>
