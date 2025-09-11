@@ -53,6 +53,39 @@ export const BasicTypes = () => {
       MaritalStatus: "casado",
       isActive: true}
     ]
+interface User{
+  name: string;
+    age: number;
+    email: string;
+    role: string;
+    MaritalStatus: string;
+    isActive: boolean;
+
+}
+const users1:User[]=[
+{
+  name: "JUanA",
+      email: "j.ne@gmail.com",
+      age: 20,
+      role: "administrador",
+      MaritalStatus: "casado",
+      isActive: true
+},
+{name: "JUanA",
+      email: "j.ne@gmail.com",
+      age: 20,
+      role: "administrador",
+      MaritalStatus: "casado",
+      isActive: true
+},
+{name: "JUanA",
+      email: "j.ne@gmail.com",
+      age: 20,
+      role: "administrador",
+      MaritalStatus: "casado",
+      isActive: true}
+
+]
     
   return (
     <>
@@ -90,12 +123,13 @@ export const BasicTypes = () => {
 <ul>
   {users.map(
     (value,index)=><div key ={index}>
-<div>{}</div>
-<div>{}</div>
-<div>{}</div>
-<div>{}</div>
-<div>{}</div>
-<div>{}</div>
+<div>{value.email}</div>
+<div>{value.age}</div>
+<div>{value.role}</div>
+<div>{value.MaritalStatus}</div>
+<div>{value.isActive}</div>
+
+<hr />
     </div>
   )
   }
