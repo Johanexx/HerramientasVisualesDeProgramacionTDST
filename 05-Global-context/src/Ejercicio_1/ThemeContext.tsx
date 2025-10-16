@@ -27,4 +27,3 @@ setTheme(prev => (prev === 'dark' ? 'light' : 'dark'))
     );
     }
 export const useThemeContext = () =>useContext(ThemeContext);
-
