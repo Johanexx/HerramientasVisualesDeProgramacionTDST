@@ -1,10 +1,11 @@
 
 
 import './App.css'
-import { LanguageProvider } from './Ejercicio_1/LanguageContext'
-import { LanguageDisplay } from './Ejercicio_1/LanguageDisplay'
-import { ThemeProvider} from './Ejercicio_1/ThemeContext'
-import { ThemeSwitcher } from './Ejercicio_1/ThemeSwitcher'
+import { LanguageProvider } from './Ejercicios/LanguageContext'
+import { LanguageDisplay } from './Ejercicios/LanguageDisplay'
+import { Settings } from './Ejercicios/settings'
+import { ThemeProvider} from './Ejercicios/ThemeContext'
+import { ThemeSwitcher } from './Ejercicios/ThemeSwitcher'
 
 function App() {
  
@@ -14,9 +15,9 @@ function App() {
     
    
 <ThemeProvider>
- <ThemeSwitcher />
+
  <LanguageProvider>
-  <LanguageDisplay />
+  <Settings />
  </LanguageProvider>
 </ThemeProvider>
    
