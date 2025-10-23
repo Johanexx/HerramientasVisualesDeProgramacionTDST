@@ -6,6 +6,8 @@ interface Props {
     // Actions
     onPress?: () => void;
     onLongPress?: () => void;
+    
+   
 }
 
 export default function FAB({
@@ -13,6 +15,8 @@ export default function FAB({
     onPress,
     onLongPress,
     position = "right",
+
+  
 }: Props) {
     return (
         <Pressable style={(pressed) => [
@@ -23,20 +27,23 @@ export default function FAB({
             onPress={onPress}
             onLongPress={onLongPress}
         >
-            <Text style={{ color: "white", fontSize: 20 }}>{label}</Text>
+            
+            <Text style={{ color: "#2e10d8ff", fontSize: 20 }}>{label}</Text>
                  </Pressable>
     )
 }
 
 
 const styles = StyleSheet.create({
-    floattingButton: {
+        floattingButton: {
+    
         position: "absolute",
         bottom: 20,
-        backgroundColor: "#007AFF",
+        backgroundColor: "#ffffffff",
         borderRadius: 15,
+       
         padding: 10,
-        shadowColor: "#000",
+        shadowColor: "#11e233ff",
         shadowOffset: {
             width: 0,
             height: 4,
@@ -49,4 +56,9 @@ const styles = StyleSheet.create({
     positionLeft: {
         left: 20,
     },
+    imageBackground: {
+    padding: 15,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
